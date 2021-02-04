@@ -1988,7 +1988,7 @@ window.__require = function e(t, n, o) {
             if (gameFunction.default.Instance.targetFruit) {
               gameFunction.default.Instance.targetFruit.destroy();
               gameFunction.default.Instance.targetFruit = null;
-              gameFunction.default.Instance.createOneFruit(Math.floor(Math.random() * 6));
+              gameFunction.default.Instance.createOneFruit(Math.floor(Math.random() * 3));
             }
             return;
           }
