@@ -18,11 +18,11 @@ let reverseLevelUp = false;
 const minRandomFruitNum = reverseLevelUp ? 6 : 0; // 生成随机水果最小值（0-10）0 为葡萄，9 为半个西瓜
 const maxRandomFruitNum = reverseLevelUp ? 11 : 5; // 生成随机水果最大值（1-11）0 为葡萄，9 为半个西瓜
 let setFruits = {
-  // 指定前几次生成的水果，可填入任意数量的数字，0 为葡萄，9 为半个西瓜
-  startFruits: reverseLevelUp ? [10, 6, 5, 2, 1, 0] : [0, 0, 1, 2, 1, 3],
-  randomFunction: () => {
-    return minRandomFruitNum + Math.floor(Math.random() * (maxRandomFruitNum - minRandomFruitNum));
-  }
+    // 指定前几次生成的水果，可填入任意数量的数字，0 为葡萄，9 为半个西瓜
+    startFruits: reverseLevelUp ? [10, 10, 9, 8, 8, 7] : [0, 0, 1, 2, 2, 3],
+    randomFunction: () => {
+        return minRandomFruitNum + Math.floor(Math.random() * (maxRandomFruitNum - minRandomFruitNum));
+    }
 }
 
 // 让水果更 Q 弹：false 改为大于 0 小于 1 的任意小数（推荐 0.9）
@@ -42,4 +42,3 @@ document.getElementsByTagName("title")[0].innerText = '合成福大至诚';
 
 // 开启选分弹窗：将 false 改为 true
 let selectModal = false;
-
